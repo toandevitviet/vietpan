@@ -132,29 +132,40 @@ else
 
 	<!-- Body -->
 	<div class="body">
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+		
 			<!-- Header -->
 			<header class="header" role="banner">
-				<div class="header-inner clearfix">
-					<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
-						<?php echo $logo; ?>
-						<?php if ($this->params->get('sitedescription')) : ?>
-							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
-						<?php endif; ?>
-					</a>
-					<div class="header-search pull-right">
-						<jdoc:include type="modules" name="position-0" style="none" />
-						<jdoc:include type="modules" name="language" style="none" />						
+				<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+					<div class="header-inner clearfix">
+						<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
+							<?php echo $logo; ?>
+							<?php if ($this->params->get('sitedescription')) : ?>
+								<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
+							<?php endif; ?>
+						</a>
+						<div class="header-search pull-right">
+							<jdoc:include type="modules" name="position-0" style="none" />
+							<jdoc:include type="modules" name="language" style="none" />						
+						</div>
 					</div>
 				</div>
 			</header>
+			<!--header-->
+			
+			<!-- menu-->
 			<?php if ($this->countModules('position-1')) : ?>
-				<nav class="navigation" role="navigation">
-					<jdoc:include type="modules" name="position-1" style="none" />
-				</nav>
+				<div class="nav-top">
+					<div class="container-notpad container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+						<nav class="navigation" role="navigation">
+							<jdoc:include type="modules" name="position-1" style="none" />
+						</nav>
+					</div>
+				</div>
 			<?php endif; ?>
+			<!-- menu-->
+
 			<jdoc:include type="modules" name="banner" style="xhtml" />
-			<div class="row-fluid">
+			<div class="row-fluid container">
 				<?php if ($this->countModules('position-8')) : ?>
 					<!-- Begin Sidebar -->
 					<div id="sidebar" class="span3">
@@ -184,21 +195,24 @@ else
 				<jdoc:include type="modules" name="position-partner"/>
 			</div>
 		</div>
-	</div>
+	
 	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-			<hr />
 			<jdoc:include type="modules" name="footer" style="none" />
-			<p id="copy-right" style="font-weight: bold">
-				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
-			</p> 
 			<p class="pull-right">
-				<!-- Social icon -->
 				<jdoc:include type="modules" name="count-visit" style="none" />
 			</p>
 		</div>
 	</footer>
+	<div class="copy-info">
+		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+			<p id="copy-right" style="font-weight: bold">
+				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
+			</p> 
+		</div>
+	</div>
+	<!--footer+copyright-->
 	<jdoc:include type="modules" name="debug" style="none" />
 </body>
 </html>
