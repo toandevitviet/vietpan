@@ -136,17 +136,12 @@ else
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-					<div class="header-inner clearfix">
-						<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
-							<?php echo $logo; ?>
-							<?php if ($this->params->get('sitedescription')) : ?>
-								<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
-							<?php endif; ?>
-						</a>
-						<div class="header-search pull-right">
-							<jdoc:include type="modules" name="position-0" style="none" />
-							<jdoc:include type="modules" name="language" style="none" />						
-						</div>
+					<div class="contact-info pull-left">
+						<p>Need help?  800-2345-6789 Mon-Sat 8:00 am to 8:00 pm</p>
+					</div>
+					<div class="header-search pull-right">
+						<jdoc:include type="modules" name="position-0" style="none" />
+						<jdoc:include type="modules" name="language" style="none" />						
 					</div>
 				</div>
 			</header>
@@ -156,7 +151,13 @@ else
 			<?php if ($this->countModules('position-1')) : ?>
 				<div class="nav-top">
 					<div class="container-notpad container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-						<nav class="navigation" role="navigation">
+						<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
+							<?php echo $logo; ?>
+							<?php if ($this->params->get('sitedescription')) : ?>
+								<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
+							<?php endif; ?>
+						</a>
+						<nav class="navigation pull-right" role="navigation">
 							<jdoc:include type="modules" name="position-1" style="none" />
 						</nav>
 					</div>

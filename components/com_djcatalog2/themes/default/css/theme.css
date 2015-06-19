@@ -153,9 +153,9 @@
 	{
 	padding: 10px;
 	background: url(../images/bg2.png) repeat;
-	border-radius: 8px 8px 8px 8px;
+	/* border-radius: 8px 8px 8px 8px; */
 	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
+	/* -webkit-border-radius: 8px; */
 }
 
 #djcatalog .djc_filters form {
