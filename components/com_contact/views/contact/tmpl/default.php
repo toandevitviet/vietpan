@@ -36,15 +36,18 @@ jimport('joomla.html.html.bootstrap');
 
 		    function initialize() {
 		        var latLng = new google.maps.LatLng(21.010774, 105.804393);
+		        var image_maps = '../../images/maps.png';
 		        var map = new google.maps.Map(document.getElementById('mapCanvas'), {
 		            zoom: 14,
 		            center: latLng,
 		            mapTypeId: google.maps.MapTypeId.ROADMAP
 		        });
+		        
 		        var marker = new google.maps.Marker({
 		            position: latLng,
-		            title: 'Baselli',
-		            map: map
+		            title: 'VietPan',
+		            map: map,
+		            icon: image_maps
 		        });
 				
 		    }

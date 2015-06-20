@@ -34,13 +34,6 @@
 			required="true"
 			class="inputbox input-large"
 		/>
-		<field name="contact_email_copy"
-			type="checkbox"
-			id="contact-email-copy"
-			label="COM_DJCATALOG2_CONTACT_EMAIL_A_COPY_LABEL"
-			default="0"
-			class="checkbox inline"
-		/>
 		
 		<field name="contact_phone"
 			type="text"

@@ -137,7 +137,7 @@ else
 			<header class="header" role="banner">
 				<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
 					<div class="contact-info pull-left">
-						<p>Need help?  800-2345-6789 Mon-Sat 8:00 am to 8:00 pm</p>
+						<p>Hỗ trợ: 04.22115515 - Email: vunguyenvipa@gmail.com</p>
 					</div>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />

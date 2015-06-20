@@ -119,8 +119,8 @@ if (isset($this->error)) { ?>
 			          <?php endif ?>
 			     <?php endforeach;?>
 				<div class="controls">
-					<button class="btn button validate" type="submit"><?php echo JText::_('COM_DJCATALOG2_CONTACT_SEND'); ?></button>
-					<button id="djc_contact_form_button_close" class="btn button"><?php echo JText::_('COM_DJCATALOG2_CONTACT_FORM_CLOSE')?></button>
+					<button class="btn-primary button validate" type="submit"><?php echo JText::_('COM_DJCATALOG2_CONTACT_SEND'); ?></button>
+					<button id="djc_contact_form_button_close" class="btn-primary button"><?php echo JText::_('COM_DJCATALOG2_CONTACT_FORM_CLOSE')?></button>
 					<input type="hidden" name="option" value="com_djcatalog2" />
 					<input type="hidden" name="task" value="item.contact" />
 					<input type="hidden" name="id" value="<?php echo $this->item->slug; ?>" />
