@@ -19,8 +19,8 @@ class JConfig {
 	public $dbprefix = 'vp_';
 	public $live_site = '';
 	public $secret = 'P7wRYa4s9xFc9brd';
-	public $gzip = '0';
-	public $error_reporting = 'default';
+	public $gzip = '1';
+	public $error_reporting = 'development';
 	public $helpurl = 'https://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '';
 	public $ftp_port = '';

@@ -7935,11 +7935,51 @@ div#djcatalog {
 	padding: 10px;
 }
 
-/*nav-child unstyled small*/
 button#djc_contact_form_button {
   width: 170px;
 }
 
-input#jform_contact_name, input#jform_contact_email, input#jform_contact_subject, textarea#jform_contact_message {
+input#jform_contact_name, input#jform_contact_email, input#jform_contact_subject, textarea#jform_contact_message, input#jform_contact_emailmsg {
   width: 60%;
+  padding-left: 5px;
+}
+
+.blog {
+  background: #fff;
+  padding: 10px;
+}
+
+.items-leading.clearfix {
+    border-bottom: 1px solid #CACACA;    background: #F5F5F5;    border-right: 1px solid #CACACA;
+    margin-bottom: 10px;
+}
+
+.items-row.cols-1.row-0.row-fluid.clearfix {
+    background: #F5F5F5;
+}
+
+h3.title-news {
+    color: #00A1AD;
+}
+
+.content-news {
+    font-size: 14px !important;
+}
+
+a.btn-readmore {
+  color: #fff;
+  background-color: #00A1AD;
+  padding: 10px 7px;
+}
+
+p.readmore {
+	margin-top: 50px;
+}
+
+.item.column-1 {
+    padding: 10px 10px 10px 0px;
+}
+
+.leading- {
+    padding: 10px 10px 10px 0px;
 }

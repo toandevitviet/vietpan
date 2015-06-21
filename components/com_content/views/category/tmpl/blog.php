@@ -13,12 +13,12 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
 JHtml::_('behavior.caption');
 ?>
-<div class="blog<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Blog">
+<div class="blog<?php echo $this->pageclass_sfx; ?>" itemscope>
 	<?php if (!empty($this->lead_items)) : ?>
 		<div class="items-leading clearfix">
 			<?php foreach ($this->lead_items as &$item) : ?>
 				<div class="leading-<?php echo $leadingcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>"
-					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+					itemprop="blogPost" itemscope >
 					<?php
 					$this->item = & $item;
 					echo $this->loadTemplate('item');
@@ -38,7 +38,7 @@ JHtml::_('behavior.caption');
 			<?php endif; ?>
 			<div class="span<?php echo round((12 / $this->columns)); ?>">
 				<div class="item column-<?php echo $rowcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>"
-					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+					itemprop="blogPost" itemscope>
 					<?php
 					$this->item = & $item;
 					echo $this->loadTemplate('item');

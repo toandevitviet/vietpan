@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 
 // Create a shortcut for params.
 $params = $this->item->params;
+//echo "<pre>"; var_dump($this->item); die;
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 $canEdit = $this->item->params->get('access-edit');
 $info    = $params->get('info_block_position', 0);
@@ -40,6 +41,12 @@ $info    = $params->get('info_block_position', 0);
 
 <?php echo JLayoutHelper::render('joomla.content.intro_image', $this->item); ?>
 
+<h3 class="title-news">
+	<?php echo $this->item->title; ?> 
+</h3>
+<div class="content-news">
+	<?php	echo substr($this->item->introtext, 0 ,1200); ?>
+</div>
 
 <?php if (!$params->get('show_intro')) : ?>
 	<?php echo $this->item->event->afterDisplayTitle; ?>

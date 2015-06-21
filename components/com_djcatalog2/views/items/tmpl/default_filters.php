@@ -90,8 +90,8 @@ $jinput = JFactory::getApplication()->input;
 			<ul class="djc_filter_search djc_clearfix">
 				<li><span><?php echo JText::_('COM_DJCATALOG2_SEARCH'); ?></span></li>
 				<li><input type="text" class="inputbox" name="search" id="djcatsearch" value="<?php echo $this->lists['search'];?>" /></li>
-				<li><input type="submit" class="button btn" onclick="document.djcatalogForm.submit();" value="<?php echo JText::_( 'COM_DJCATALOG2_GO' ); ?>" /></li>
-				<li><input type="submit" class="button btn" onclick="document.getElementById('djcatsearch').value='';document.djcatalogForm.submit();" value="<?php echo JText::_( 'COM_DJCATALOG2_RESET' ); ?>" /></li>
+				<li><input type="submit" class="button btn-primary" onclick="document.djcatalogForm.submit();" value="<?php echo JText::_( 'COM_DJCATALOG2_GO' ); ?>" /></li>
+				<li><input type="submit" class="button btn-primary" onclick="document.getElementById('djcatsearch').value='';document.djcatalogForm.submit();" value="<?php echo JText::_( 'COM_DJCATALOG2_RESET' ); ?>" /></li>
 			</ul>
 		<?php } ?>
 	<?php if (!($this->params->get('show_category_filter') > 0)) { ?>
